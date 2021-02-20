@@ -21,9 +21,9 @@
 
 ## View
 
-- Ambil sqlnya di phpmyadmin
+- Ambil sqlnya SELECT\* di phpmyadmin (WHERE 1)
 - Eksekusi SQLnnya
-- Buat Tabelnya (Link bootstrap) dan "fetch_assoc"
+- Buat Tabelnya (Link bootstrap CSS) dan if num_rows while "fetch_assoc"
 - Buat kondisi Jika data yang di input lebih dari 0 maka tampilkan data dengan variabel
 
 ## Update
