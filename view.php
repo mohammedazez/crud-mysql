@@ -43,6 +43,10 @@ $result = $conn->query($sql);
                             <td><?php echo $row['nomor hp']; ?></td>
                             <td><?php echo $row['email']; ?></td>
                             <td><?php echo $row['password']; ?></td>
+                            <td>
+                                <a class="btn btn-warning" href="update.php?id=<?php echo $row['id']; ?>">Update</a>
+                                <a class="btn btn-warning" href="delete.php?id=<?php echo $row['id']; ?>">Delete</a>
+                            </td>
                         </tr>
                 <?php
                     }

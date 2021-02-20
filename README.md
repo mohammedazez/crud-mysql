@@ -27,6 +27,7 @@
 - if resultnya num_rows jika lebih dari 0
 - while parameter variabel row = result "fetch_assoc"
 - tampilkan data row echo title di phpmyadmin
+- buat tombol update dan delete arahkan ke href, variabel id= target id
 
 ## Update
 
