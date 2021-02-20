@@ -33,16 +33,23 @@
 
 - (update)Function untuk update
 - (update)Target tombol update di formnya "isset" "POST'
+- (update)Buat variable data name di form
 - (update)Ambil SQL Update di phpmyadmin, ganti valuenya dengan variabel, dan dengan id
 - (update)Eksekusi SQLnya
 - (update)Buat Kondisi ekseskusi gagal atau berhasil
 - (id)Function untuk ambil id
 - (id) Jika variabel id di klik dan sudah terlihat di url, maka kita perlu mengedit data berdasarkan id "isset" "GET'
-- (id)Ambil SQL Select\* di phpmyadmin dengan id
-- (id)Eksekusi SQLnya
-- (id)Jika result datanya lebih dari 0 maka eksekusi dan tampilkan datanya
-- (id)Buat Table formnya (Ambil varibel idnya untuk value tiap form)
-- (id)Jika id tidak valid maka arakan halaman ke view.php
+- (id) Buat variabe user id
+- (id) Ambil SQL Select\* di phpmyadmin dengan id
+- (id) Eksekusi SQLnya
+- (id) if resultnya num_rows jika lebih dari 0
+- (id) while parameter variabel row = result "fetch_assoc"
+- (id) buat variabel = row ke title data di phpmyadmin
+- (tabel) Buat Table formnya
+- (tabel) tambahkan input id
+- (tabel) Ambil varibel idnya untuk value tiap form tanpa $row
+- (tabel) value menggunakan variabel function ambil id if while result
+- (id) Jika id tidak valid maka arakan halaman ke view.php
 
 ## Delete
 
