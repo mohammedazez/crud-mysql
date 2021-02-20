@@ -7,7 +7,7 @@ if (isset($_POST['submit'])) {
     $email = $_POST['email'];
     $password = $_POST['password'];
 
-    $sql = "INSERT INTO `pelanggan`(`id`, `nama`, `alamat`, `nomor hp`, `email`, `password`) VALUES ('$namaLengkap', '$alamatLengkap', '$nomorHp','$email' ,'$password')";
+    $sql = "INSERT INTO `pelanggan`(`nama`, `alamat`, `nomor hp`, `email`, `password`) VALUES ('$namaLengkap', '$alamatLengkap', '$nomorHp','$email' ,'$password')";
 
     $result = $conn->query($sql);
 
