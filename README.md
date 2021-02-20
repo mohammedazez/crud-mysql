@@ -21,10 +21,12 @@
 
 ## View
 
-- Ambil sqlnya SELECT\* di phpmyadmin (WHERE 1)
+- Ambil sqlnya SELECT\* di phpmyadmin (hapus WHERE 1)
 - Eksekusi SQLnnya
-- Buat Tabelnya (Link bootstrap CSS) dan if num_rows while "fetch_assoc"
-- Buat kondisi Jika data yang di input lebih dari 0 maka tampilkan data dengan variabel
+- Buat Tabelnya (Link bootstrap CSS)
+- if resultnya num_rows jika lebih dari 0
+- while parameter variabel row = result "fetch_assoc"
+- tampilkan data row echo title di phpmyadmin
 
 ## Update
 

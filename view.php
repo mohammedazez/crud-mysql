@@ -32,14 +32,24 @@ $result = $conn->query($sql);
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>12</td>
-                    <td>12</td>
-                    <td>12</td>
-                    <td>12</td>
-                    <td>12</td>
-                    <td>12</td>
-                </tr>
+                <?php
+                if ($result->num_rows > 0) {
+                    while ($row = $result->fetch_assoc()) {
+                ?>
+                        <tr>
+                            <td><?php echo $row['id']; ?></td>
+                            <td><?php echo $row['nama']; ?></td>
+                            <td><?php echo $row['alamat']; ?></td>
+                            <td><?php echo $row['nomor hp']; ?></td>
+                            <td><?php echo $row['email']; ?></td>
+                            <td><?php echo $row['password']; ?></td>
+                        </tr>
+                <?php
+                    }
+                }
+                ?>
+
+
             </tbody>
         </table>
     </div>
