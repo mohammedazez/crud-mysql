@@ -33,7 +33,7 @@
 
 - (update)Function untuk update
 - (update)Target tombol update bagian name di formnya "isset" "POST'
-- (update)Buat variable data name di form "POST" dan tambahkan ie
+- (update)Buat variable data name di form "POST" dan tambahkan id
 - (update)Ambil SQL Update di phpmyadmin, ganti valuenya dengan variabel, dan dengan id = user id
 - (update)Eksekusi SQLnya
 - (update)Buat Kondisi ekseskusi gagal atau berhasil

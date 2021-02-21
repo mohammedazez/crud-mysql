@@ -1,13 +1,13 @@
 <?php
 include "config.php";
 // Function update
-if (isset($_GET['update'])) {
-    $namaLengkap = $_GET['nama'];
-    $user_id = $_GET['id'];
-    $alamatLengkap = $_GET['alamat'];
-    $nomorHp = $_GET['nomor'];
-    $email = $_GET['email'];
-    $password = $_GET['password'];
+if (isset($_POST['update'])) {
+    $namaLengkap = $_POST['nama'];
+    $user_id = $_POST['user_id'];
+    $alamatLengkap = $_POST['alamat'];
+    $nomorHp = $_POST['nomor'];
+    $email = $_POST['email'];
+    $password = $_POST['password'];
 
 
     $sql = "UPDATE `pelanggan` SET `nama`='$namaLengkap',`alamat`='$alamatLengkap',`nomor hp`='$nomorHP',`email`='$email',`password`='$password' WHERE `id`='$user_id'";
@@ -34,7 +34,6 @@ if (isset($_GET['id'])) {
 
     if ($result->num_rows > 0) {
         while ($row = $result->fetch_assoc()) {
-            $nama_lengkap = $row['nama'];
             $nama = $row['nama'];
             $alamat = $row['alamat'];
             $nomor = $row['nomor hp'];
@@ -49,7 +48,7 @@ if (isset($_GET['id'])) {
     <form action="" method="POST">
         <fieldset>
             <label>Nama Lengkap : </label></br>
-            <input type="text" name="nama" placeholder="name" value="<?php echo $nama_lengkap; ?>"></br></br>
+            <input type="text" name="nama" placeholder="name" value="<?php echo $nama; ?>"></br></br>
             <input type="hidden" name="user_id" value="<?php echo $id; ?>"></br></br>
             <label>Alamat Lengkap :</label></br>
             <input type="text" name="alamat" placeholder="alamat" value="<?php echo $alamat; ?>"></br></br>
@@ -61,9 +60,10 @@ if (isset($_GET['id'])) {
             <input type="text" name="password" placeholder="password" value="<?php echo $password; ?>"></br></br>
             <input type="submit" value="Update" name="update">
         </fieldset>
+    </form>
 
-    <?php
+<?php
 } else {
     header("locatio : view.php");
 }
-    ?>
+?>
