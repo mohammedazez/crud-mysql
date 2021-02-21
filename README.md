@@ -54,7 +54,7 @@
 ## Delete
 
 - Ambil id "isset" "GET"
-- Buat variabel
-- Ambil SQL delete di phpmyadmin
+- Buat variabel user id
+- Ambil SQL delete di phpmyadmin dan tambahkan id
 - Eksekusi SQLnya
 - Buat kondisi jika berhasil dan gagal
